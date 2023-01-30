@@ -1,0 +1,464 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./pic/im1.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: border-box;
+    background-attachment: local;
+    background-origin: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-color: #3a0ca3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.logo {
+    color: white;
+    padding: 12px 24px;
+    font-size: 27px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.nav_links ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav_links li {
+    padding: 1.5rem;
+}
+
+
+.nav_links li::after {
+    content:'';
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin-top: 5px;
+    transition: .5s;
+}
+
+.nav_links li:hover::after {
+    width: 100%;
+}
+
+.nav_links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    align-items: center;
+}
+
+nav .fa {
+    display: none;
+}
+
+/* FIrst Section */
+
+.container {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 3rem;
+    color: white;
+}
+
+.container p {
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 18px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 35px;
+    transition: .5s;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to right, #7209b7 15%,#4361ee 100%);
+    background-clip: text;
+    border: 2px solid #7209b7;
+}
+
+/*.............. Course section............ */
+
+.course {
+    width: 100%;
+    background: white;
+    padding: 0 10%;
+}
+
+.course h1 {
+    font-size: 2.5rem;
+    color: black;
+    text-align: center;
+    margin-top: 75px;
+}
+
+.course p {
+    font-size: 1rem;
+    margin-top: 25px;
+    color: #777777;
+    font-weight: normal;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+
+.course-col {
+    border-radius: 10px;
+    flex-basis: 31%;
+    text-align: center;
+    background: #eae3ea;
+    padding: 2rem 1.5rem 2rem;
+    transition: .5s;
+}
+
+.course-col:hover {
+    box-shadow: 0px 0px 10px #7f6f9f;
+}
+
+/* ..........Campus Section............ */
+
+.campus {
+    width: 100%;
+    background: white;
+    padding: 0 10%;
+}
+
+.campus h1 {
+    font-size: 2.5rem;
+    color: black;
+    text-align: center;
+    margin-top: 75px;
+}
+
+.campus p {
+    font-size: 1rem;
+    margin-top: 25px;
+    color: #777777;
+    font-weight: normal;
+    text-align: center;
+}
+
+.campus-col {
+    border-radius: 10px;
+    flex-basis: 31%;
+    transition: .5s;
+    overflow: hidden;
+    position: relative;
+}
+
+.campus-col img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    transition: .5s;
+}
+
+.layer h3 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 23px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+.layer:hover {
+    background: #560aad99;
+}
+
+.layer:hover h3 {
+    bottom: 45%;
+}
+
+/*.............. Facility Section............ */
+
+.facilities {
+    width: 100%;
+    background: white;
+    padding: 0 10%;
+}
+
+
+.facilities h1 {
+    font-size: 2.5rem;
+    color: black;
+    text-align: center;
+    margin-top: 75px;
+}
+
+.facilities p {
+    font-size: 1rem;
+    margin-top: 25px;
+    color: #777777;
+    font-weight: normal;
+    text-align: center;
+}
+
+.facilities-col {
+    border-radius: 10px;
+    flex-basis: 31%;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.facilities-col img {
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.facilities-col h5 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 13px;
+}
+
+/* .........Reviews Section......... */
+
+.review {
+    width: 100%;
+    background: white;
+    padding: 100px 10% 0;
+}
+
+.review h1 {
+    font-size: 2.5rem;
+    color: black;
+    text-align: center;
+    margin-top: 75px;
+}
+
+.review p {
+    font-size: 1rem;
+    margin-top: 25px;
+    color: #777777;
+    font-weight: normal;
+    text-align: center;
+}
+
+.review-col {
+    border-radius: 10px;
+    flex-basis: 47%;
+    text-align: center;
+    background: #eae3ea;
+    padding: 2rem 1.5rem 2rem;
+    transition: .5s;
+    display: flex;
+}
+
+.review-col img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.review-col div {
+    line-height: 25px;
+}
+
+.review-col div p {
+    text-align: left;
+}
+
+.review-col div h4 {
+    text-align: center;
+    margin:20px 0 10px;
+}
+
+.fa {
+    color: gold;
+    float: left;
+    margin-right: 4px;
+}
+
+/* ........Enrol Section........... */
+
+.enroll {
+    margin: 120px auto 0;
+    height: 40vh;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./pic/im8.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80%;
+    text-align: center;
+}
+
+.enroll h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 100px;
+}
+
+/* .........Footer Section........... */
+
+.footer {
+    padding: 130px 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bout {
+    width: 50%;
+    text-align: center;
+}
+
+.bout h4 {
+    margin: 40px 0;
+}
+
+.bout p {
+    font-size: 1rem;
+    margin-top: 25px;
+    color: #777777;
+    line-height: 25px;
+}
+
+.icons .fab {
+    color: black;
+    font-size: 1.2rem;
+    margin: 30px 20px 0 0;
+    padding: 0.6rem;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+/* .........Responsiveness............ */
+
+@media screen and (max-width:700px) {
+    .nav_links {
+        position: absolute;
+        left: -990px;
+        top: 4rem;
+        width: 40vh;
+        background-color: #3a0ca3;
+        height: 100vh;
+        z-index: 1;
+        transition: .75s ease;
+    }
+
+    .nav_links .fa {
+        float: right;
+    }
+
+
+    .nav_links ul {
+        margin-top: 78px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .nav_links li {
+        text-align: left;
+        width: fit-content;
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .container h2 {
+        font-size: 2rem;
+    }
+
+    .container p {
+        font-size: 1rem;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .row div {
+        margin-bottom: 20px;
+    }
+    img {
+        width: 100%;
+    }
+    .enroll {
+        width: 90%;
+        height: 40vh;
+        padding: 0 0 50xp;
+    }
+
+    .enroll h2 {
+        font-size: 25px;
+    }
+
+    .bout {
+        width: 70%;
+    }
+}
